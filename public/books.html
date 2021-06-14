@@ -7,24 +7,25 @@
     <title>Books</title>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">Library</a>
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="authors.html">Authors</a></li>
             <li><a href="books.html">Books</a></li>
             <li><a href="delete-book.html">Delete Book</a></li>
-            <li><a href="insert-author.html">Insert Author</a> </li>
             <li><a href="insert-book.html">Insert Book</a> </li>
-            <li><a href="show-author.html">Show Author</a></li>
             <li><a href="show-book.html">Show Book</a></li>
             <li><a href="update-book.html">Update Book</a></li>
         </ul>
     </div>
 </nav>
+<div class="container">
+    <button class="btn-primary btn-lg" id="btnLoadBooks">Load Books</button>
+    <a href="insert-book.html" class="btn-lg">Add a Book</a>
+</div>
 <script>
     function CreateTable(data){
         let table = "";
@@ -59,7 +60,7 @@
             '</table>\n'
         return table;
     }
-    document.getElementById("btnLoadFriends").addEventListener("click", (event) =>{
+    document.getElementById("btnLoadBooks").addEventListener("click", (event) =>{
         let url = "https://intense-tor-87665.herokuapp.com/api/students/"
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function (){

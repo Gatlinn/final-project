@@ -8,24 +8,31 @@
     <title>Update Book</title>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="index.html">Library</a>
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="authors.html">Authors</a></li>
             <li><a href="books.html">Books</a></li>
             <li><a href="delete-book.html">Delete Book</a></li>
-            <li><a href="insert-author.html">Insert Author</a> </li>
             <li><a href="insert-book.html">Insert Book</a> </li>
-            <li><a href="show-author.html">Show Author</a></li>
             <li><a href="show-book.html">Show Book</a></li>
             <li><a href="update-book.html">Update Book</a></li>
         </ul>
     </div>
 </nav>
-
+<div class="container">
+    <h1>Update a book</h1>
+    <form method="GET">
+        <div class="mb-3 form-group">
+            <label for="updateBook">Title of book to update: </label><br>
+            <input type="text" id="updateBook" name="updateBook" class="form-control"
+                   placeholder="Name of book to update"><br>
+            <input type="submit">
+        </div>
+    </form>
+</div>
 </body>
 </html>
